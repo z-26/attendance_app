@@ -2,7 +2,7 @@ from fastapi import status
 import logging
 from typing import Optional
 import app.service.response_msg as messages
-from app.api.schemas.generic_response import Response
+from app.schemas.generic_response import Response
 
 
 logging.basicConfig(level=logging.INFO)
