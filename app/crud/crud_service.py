@@ -56,4 +56,4 @@ class CRUDService(CRUDBase[Service, CreateService, UpdateService]):
             logger.exception(f"Error occured in update : {e}")
 
 
-crud_service = CRUDService()
+crud_service = CRUDService(Service)
