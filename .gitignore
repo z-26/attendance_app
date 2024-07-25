@@ -1,0 +1,23 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+env/
+venv/
+ENV/
+ENV.bak/
+*.env
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Logs
+*.log
+
+# FastAPI-specific
+instance/
