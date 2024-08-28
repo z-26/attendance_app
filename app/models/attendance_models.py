@@ -1,5 +1,5 @@
 import datetime
-from sqlalchemy import Column, Integer, Float, DateTime, String, ForeignKey, Date, Time
+from sqlalchemy import Column, Integer, Float, DateTime, String, ForeignKey, Date, Time, Boolean
 from app.database import Base
 
 
@@ -39,6 +39,7 @@ class Participants(Base):
     state = Column(String(250))
     country = Column(String(100))
     pin_code = Column(String(6))
+    is_active = Column(Boolean(), default=True)
     mobile_number = Column(String(15))
     created_at = Column(DateTime(timezone=True),
                         default=lambda: datetime.datetime.now(datetime.timezone.utc))
