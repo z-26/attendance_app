@@ -1,6 +1,6 @@
 from pydantic import BaseModel, validator
 from typing import Optional
-from datetime import date
+from datetime import date, time
 
 
 class CreateParticipants(BaseModel):
@@ -36,3 +36,11 @@ class UpdateParticipants(BaseModel):
     country: Optional[str]
     pin_code: Optional[str]
     mobile_number: Optional[str]
+
+
+class AttendanceClock(BaseModel):
+    participant_code: str
+
+class CreateAttendance(AttendanceClock):
+    date: date
+    start_time: time
