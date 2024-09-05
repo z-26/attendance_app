@@ -4,7 +4,7 @@ from fastapi.encoders import jsonable_encoder
 from sqlalchemy.orm import Session
 from app.api import deps
 from app.schemas.attendance import CreateParticipants, ParticipantsInDB, UpdateParticipants
-from app.crud.crud_attendance import crud_participants
+from app.crud.crud_participants import crud_participants
 from app.service.utils import generate_response
 from app.service import response_msg as messages
 
